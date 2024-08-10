@@ -1,0 +1,6 @@
+::1 - - [10/Aug/2024:19:56:43 +0000] "OPTIONS /products?perPage=8 HTTP/1.1" 204 0
+::1 - - [10/Aug/2024:19:56:43 +0000] "OPTIONS /chat/getMessagesForRoom?roomId=66b71b741a61ce2ce1e9be8e HTTP/1.1" 204 0
+::1 - - [10/Aug/2024:19:56:43 +0000] "OPTIONS /products?perPage=8 HTTP/1.1" 204 0
+::1 - - [10/Aug/2024:19:56:43 +0000] "OPTIONS /chat/getMessagesForRoom?roomId=66b71b741a61ce2ce1e9be8e HTTP/1.1" 204 0
+::1 - - [10/Aug/2024:19:59:22 +0000] "OPTIONS /admin/orders HTTP/1.1" 204 0
+::1 - - [10/Aug/2024:19:59:25 +0000] "OPTIONS /admin/orders HTTP/1.1" 204 0
