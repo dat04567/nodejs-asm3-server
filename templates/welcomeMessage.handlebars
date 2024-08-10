@@ -1,0 +1,38 @@
+<div class='container'>
+  <h1>Xin Chào {{name}} </h1>
+  <p>Phone: {{phone}}</p>
+  <p>Address: {{address}}</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tên Sản Phẩm</th>
+        <th>Hình Ảnh</th>
+        <th>Giá</th>
+        <th>Số Lượng</th>
+        <th>Thành Tiền</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each items}}
+        <tr>
+          <td>{{name}}</td>
+          <td><img
+              src='cid:image{{@index}}'
+              alt='{{product.name}}'
+              class='product-image'
+            /></td>
+          <td> {{price}} VND</td>
+          <td>{{quantity}}</td>
+          <td> {{totalProduct}} VND</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <div class='total'>
+    <p>Tổng Thanh Toán:</p>
+    <p>{{totalAmount}} VND</p>
+  </div>
+  <p class='thank-you'>Cảm ơn bạn!</p>
+</div>
