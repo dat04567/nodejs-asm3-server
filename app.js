@@ -9,13 +9,13 @@ const app = server.app;
 const io = server.io;
 const hostname = process.env.HOSTNAME || 'localhost';
 const port = process.env.PORT || 8080;
-const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const compression = require('compression');
 const logger = require('morgan');
 const cors = require('cors');
 const fs = require('fs');
 const { log } = require('./util');
+const rateLimit = require('express-rate-limit');
 const {
   productRoutes,
   authRoutes,
@@ -27,7 +27,8 @@ const {
 
 // Tin tưởng các proxy
 
-app.set('trust proxy', true);
+app.set('trust proxy', ['52.41.36.82', '54.191.253.12', '44.226.122.3']);
+
 // Cấu hình express-rate-limit
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 phút
