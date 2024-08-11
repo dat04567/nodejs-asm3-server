@@ -26,12 +26,12 @@ const {
 } = require('./routes');
 
 // Tin tưởng các proxy
-app.set('trust proxy', true);
 
+app.set('trust proxy', true);
 // Cấu hình express-rate-limit
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 phút
-  max: 100, // giới hạn mỗi IP 100 yêu cầu mỗi 15 phút
+  max: 5000, // giới hạn mỗi IP 100 yêu cầu mỗi 15 phút
   message: 'Too many requests from this IP, please try again after 15 minutes',
 });
 
