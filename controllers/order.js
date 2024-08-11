@@ -2,7 +2,6 @@ const { validationResult } = require('express-validator');
 const Cart = require('../models/cart');
 const Order = require('../models/order');
 const nodemailer = require('nodemailer');
-const sendgridTransport = require('nodemailer-sendgrid-transport');
 const hbs = require('nodemailer-express-handlebars');
 const { log } = require('../util');
 const transporter = nodemailer.createTransport({
